@@ -1,7 +1,7 @@
 import random
 
-import data
-from utils import rand
+from . import data
+from .utils import rand
 
 
 
@@ -23,4 +23,5 @@ COMPANY_NAME = lambda: random.choice([
     "".join([rand(data.COMPANY_NAME_PREFIX).capitalize(), rand(data.COMPANY_NAME_SUFFIX).capitalize()]),
     "%s %s" % ("".join([rand(data.COMPANY_NAME_PREFIX).capitalize(), rand(data.COMPANY_NAME_SUFFIX)]), rand(data.COMPANY_NAME_EXTRA).capitalize())
 ])
+print("load data done")
 
