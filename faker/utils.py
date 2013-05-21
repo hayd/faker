@@ -1,7 +1,7 @@
 import re
 import random
 
-import data
+import faker.data as data
 
 
 

@@ -8,9 +8,9 @@ __all__ = ("Faker",)
 
 import random
 
-import data
-import patterns
-from utils import *
+import faker.data as data
+import faker.patterns as patterns
+from faker.utils import *
 
 
 # Decorator for methods that need _get_names.  This ensures that if we
